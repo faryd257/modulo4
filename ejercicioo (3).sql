@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 08-07-2023 a las 01:52:18
+-- Tiempo de generación: 09-07-2023 a las 01:03:23
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -34,8 +34,8 @@ CREATE TABLE IF NOT EXISTS `empleados` (
   `apellido` varchar(60) NOT NULL,
   `trabajo` varchar(60) NOT NULL,
   `edad` int NOT NULL,
-  `salario` varchar(10) NOT NULL,
-  `mail` varchar(80) NOT NULL,
+  `salario` decimal(10,0) NOT NULL,
+  `mail` varchar(60) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id_emp`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 
